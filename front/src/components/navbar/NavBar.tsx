@@ -12,10 +12,10 @@ export default function NavBar () {
                         </Link>
                     </div>
                     <div className="flex gap-4 mr-4 mb-2">
-                        <Link href={"/home"} className="hover:text-primary-hover hover:shadow-sm rounded-lg  transition duration-300 p-2">Inicio</Link>
-                        <Link href={"/aboutme"} className="hover:text-primary-hover hover:shadow-sm rounded-lg  transition duration-300 p-2">Sobre Mi</Link>
-                        <Link href={"/proyects"} className="hover:text-primary-hover hover:shadow-sm rounded-lg  transition duration-300 p-2">Proyectos</Link>
-                        <Link href={"/contact"} className="hover:text-primary-hover hover:shadow-sm rounded-lg  transition duration-300 p-2">Contacto</Link>
+                        <Link href={"/home"} className="hover:text-link-hover hover:shadow-sm rounded-lg  transition duration-300 p-2">Inicio</Link>
+                        <Link href={"/aboutme"} className="hover:text-link-hover hover:shadow-sm rounded-lg  transition duration-300 p-2">Sobre Mi</Link>
+                        <Link href={"/proyects"} className="hover:text-link-hover hover:shadow-sm rounded-lg  transition duration-300 p-2">Proyectos</Link>
+                        <Link href={"/contact"} className="hover:text-link-hover hover:shadow-sm rounded-lg  transition duration-300 p-2">Contacto</Link>
                         <ThemeToggle />
                     </div>
                 </div>

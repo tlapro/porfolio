@@ -9,11 +9,33 @@ export default {
   theme: {
     extend: {
       colors: {
+        /* Fondo y texto general */
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "var(--primary)",
-        "primary-hover": "var(--primary-hover)",
-        secondary: "var(--secondary)",
+
+        /* Botones */
+        "button-bg": "var(--button-bg)",
+        "button-text": "var(--button-text)",
+        "button-hover": "var(--button-hover)",
+        "button-border": "var(--button-border)",
+
+        /* Tarjetas */
+        "card-bg": "var(--card-bg)",
+        "card-border": "var(--card-border)",
+        "card-text": "var(--card-text)",
+        "tecnologies-bg": "var(--tecnologies-card-bg)",
+
+        /* Inputs */
+        "input-bg": "var(--input-bg)",
+        "input-border": "var(--input-border)",
+        "input-text": "var(--input-text)",
+        "input-placeholder": "var(--input-placeholder)",
+        "input-focus": "var(--input-focus)",
+
+        /* Otros */
+        "link-text": "var(--link-text)",
+        "link-hover": "var(--link-hover)",
+        "secondary-bg": "var(--secondary-bg)",
         "secondary-hover": "var(--secondary-hover)",
       },
     },

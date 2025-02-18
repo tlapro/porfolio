@@ -6,9 +6,29 @@
   --background: #ffffff; 
   --foreground: #000000; 
 
-  --primary: #007bff; 
-  --primary-hover: #0056b3;
-  --secondary: #6c757d;
+  /* Botones */
+  --button-bg: #007bff;
+  --button-text: #ffffff;
+  --button-hover: #0056b3;
+  --button-border: #0056b3;
+
+  /* Tarjetas */
+  --card-bg: #f8f9fa;
+  --card-border: #f3f3f3;
+  --card-text: #000000;
+  --tecnologies-card-bg: #f8f9fa;
+
+  /* Inputs */
+  --input-bg: #ffffff;
+  --input-border: #ced4da;
+  --input-text: #000000;
+  --input-placeholder: #6c757d;
+  --input-focus: #007bff;
+
+  /* Otros */
+  --link-text: #007bff;
+  --link-hover: #0056b3;
+  --secondary-bg: #6c757d;
   --secondary-hover: #545b62;
 }
 
@@ -16,11 +36,32 @@
   --background: #07060e;
   --foreground: #ffffff;
 
-  --primary: #040f1a; 
-  --primary-hover: #ffd900;
-  --secondary: #040f1f;
+  /* Botones */ 
+  --button-bg: #040f1a;
+  --button-text: #ffffff;
+  --button-hover: #ffd900;
+  --button-border: #ffd900;
+
+  /* Tarjetas */
+  --card-bg: #0d0d0d;
+  --card-border: #2d2d2d;
+  --card-text: #ffffff;
+  --tecnologies-card-bg: #ffffff;
+
+  /* Inputs */
+  --input-bg: #1a1a1a;
+  --input-border: #2d2d2d;
+  --input-text: #ffffff;
+  --input-placeholder: #a1a1a1;
+  --input-focus: #ffd900;
+
+  /* Otros */
+  --link-text: #ffd900;
+  --link-hover: #ffc107;
+  --secondary-bg: #040f1f;
   --secondary-hover: #040e1d;
 }
+
 
 
 @media (prefers-color-scheme: dark) {
