@@ -3,8 +3,8 @@ import ThemeToggle from "../themeToggle/ThemeToggle";
 
 export default function NavBar () {
     return (
-        <div className="pb-1 shadow-md">
-            <div className="flex items-center h-6 w-full p-4 ">
+        <div className="flex bg-card-bg border-card-border border-b-2">
+            <div className="flex h-18 bg-card-bg shadow-md items-center w-full pt-3 pb-1">
                 <div className="flex items-center justify-between w-full">
                     <div className="text-xl font-semibold ml-4 mb-2">
                         <Link href={"/home"}>

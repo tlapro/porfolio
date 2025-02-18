@@ -33,7 +33,7 @@
 }
 
 .dark {
-  --background: #07060e;
+  --background: #0a0a0a;
   --foreground: #ffffff;
 
   /* Botones */ 
@@ -44,7 +44,7 @@
 
   /* Tarjetas */
   --card-bg: #0d0d0d;
-  --card-border: #2d2d2d;
+  --card-border: #141414;
   --card-text: #ffffff;
   --tecnologies-card-bg: #ffffff;
 
@@ -63,16 +63,12 @@
 }
 
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto), monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-roboto-mono), serif;  /* Aplica Merriweather a los encabezados */
 }
