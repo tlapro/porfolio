@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import NavBar from "@/components/navbar/NavBar";
 
@@ -28,11 +29,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased mt-4`}
       >
-
+    <ThemeProvider attribute="class">
       <NavBar />
     <div className="mt-6">
         {children}
     </div>
+    </ThemeProvider>
     </body>
     </html>
   );
