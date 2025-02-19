@@ -20,9 +20,7 @@ export default function Footer () {
             <FaGithub size={45} 
             className="hover:text-link-hover transition duration-300 ease"/>
             </Link>
-            <Link href={"tlaprovitta@gmail.com"}
-            target="_blank"
-            rel="noopener noreferrer">
+            <Link href={"mailto:tlaprovitta@gmail.com"}>
             <MdOutlineEmail 
             size={45}
             className="hover:text-link-hover transition duration-300 ease"/>

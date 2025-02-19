@@ -5,13 +5,12 @@ export default function ThemeToggle() {
   const [darkMode, setDarkMode] = useState<boolean | null>(null);
 
   useEffect(() => {
-    // Verifica el tema almacenado en localStorage al montar el componente
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setDarkMode(savedTheme === "dark");
       document.documentElement.classList.toggle("dark", savedTheme === "dark");
     } else {
-      // Si no hay preferencia, usa el esquema por defecto (puedes ajustarlo a lo que prefieras)
+     
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       setDarkMode(prefersDark);
       document.documentElement.classList.toggle("dark", prefersDark);
@@ -25,7 +24,7 @@ export default function ThemeToggle() {
     document.documentElement.classList.toggle("dark", newMode);
   };
 
-  if (darkMode === null) return null; // Asegura que el tema se establezca antes de renderizar el componente
+  if (darkMode === null) return null; 
 
   return (
     <button onClick={toggleTheme} className="p-2 text-foreground rounded hover:text-link-hover">
