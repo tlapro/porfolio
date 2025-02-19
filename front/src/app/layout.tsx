@@ -4,23 +4,24 @@ import "./globals.css";
 import NavBar from "@/components/navbar/NavBar";
 import Footer from "@/components/footer/Footer";
 import IsDarkMode from "@/components/isDark/IsDarkMode";
+import BackgroundText from "@/components/backgroundText/BackgroundText";
 
 const roboto = Roboto({
-  weight: "400", // Peso de la fuente
-  subsets: ["latin"], // Subconjunto de caracteres (opcional, pero recomendable)
-  variable: "--font-roboto", // Nombre de la variable CSS
+  weight: "400", 
+  subsets: ["latin"], 
+  variable: "--font-roboto", 
 });
 
 const merriweather = Merriweather({
-  weight: "700", // Peso de la fuente
-  subsets: ["latin"], // Subconjunto de caracteres
-  variable: "--font-merriweather", // Nombre de la variable CSS
+  weight: "700",
+  subsets: ["latin"],
+  variable: "--font-merriweather",
 });
 
 const robotoMono = Roboto_Mono({
-  weight: "400", // Puedes ajustar el peso según sea necesario
+  weight: "400", 
   subsets: ["latin"],
-  variable: "--font-roboto-mono", // Agregar variable personalizada
+  variable: "--font-roboto-mono",
 });
 
 export const metadata: Metadata = {
@@ -38,9 +39,10 @@ export default function RootLayout({
       <body
         className={`${robotoMono.variable} ${roboto.variable} ${merriweather.variable} antialiased`}
       >
+        <BackgroundText />
         <IsDarkMode>
           <NavBar />
-          <div className="mt-6">{children}</div>
+          <div className="relative z-10 mt-6">{children}</div>
           <Footer />
         </IsDarkMode>
       </body>

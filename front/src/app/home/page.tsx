@@ -34,27 +34,27 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="flex flex-col md:flex-row w-[90%] gap-4 shadow-lg rounded-lg p-4 bg-card-bg h-fit border-2 border-card-border">
-        <div className="flex justify-center md:w-4/12">
+      <div className="flex flex-col md:flex-row w-[80%] gap-4 shadow-lg rounded-lg p-4 bg-card-bg h-fit border-2 border-card-border">
+        <div className="flex justify-center md:w-6/12">
           <Image
             src={"/tomas.jpg"}
             alt="tomas"
             width={250}
             height={250}
-            className="rounded-lg"
+            className="rounded-xl"
           />
         </div>
         <div>
           <h1 className="text-4xl font-semibold">
             Tomás Laprovitta<span className="text-sm text-link-hover"> && Full Stack Developer</span>
           </h1>
-          <p className="mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui ullam quam itaque adipisci optio similique, soluta, sint vitae consectetur quasi, accusamus blanditiis? Corporis mollitia tempore reprehenderit aliquam molestiae quos?
+          <p className="text-md text-justify mt-4">
+           ¡Hola! Soy Licenciado en Administración y Desarrollador Web FullStack, esta combinación de habilidades me permite abordar los desafíos de la tecnología y los negocios desde una perspectiva integral.
           </p>
         </div>
       </div>
 
-      <div className="flex w-[90%] flex-col mt-10 gap-4 shadow-lg rounded-lg p-4 bg-card-bg h-fit border-2 border-card-border">
+      <div className="flex w-[80%] flex-col mt-10 gap-4 shadow-lg rounded-lg p-4 bg-card-bg h-fit border-2 border-card-border">
         <h1 className="text-xl font-semibold text-center">Tecnologías</h1>
         <div className="grid grid-cols-[1fr_5fr_1fr] w-full justify-between items-center">
           <div className="text-center mt-10">
