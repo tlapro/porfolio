@@ -39,11 +39,8 @@ export default async function RootLayout({
 }) {
   const cookieStore = await cookies();
   const storedLocale = cookieStore.get("locale")?.value ?? "es";
-  console.log("Stored Locale:", storedLocale); // Verifica el valor de la cookie
 
-  // Obtener los mensajes usando el locale
   const messages = await getMessages({ locale: storedLocale });
-  console.log("Messages:", messages); // Verifica los mensajes cargados
 
   return (
     <html lang={storedLocale}>

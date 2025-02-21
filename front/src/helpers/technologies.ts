@@ -4,7 +4,7 @@ export const technologies = [
     name: "React",
     type: "framework",
     description: "React",
-    url: "https://es.wikipedia.org/wiki/React",
+    url: "https://react.dev/",
     image: "https://i.imgur.com/pJqSsPz.png",
   },
   {
@@ -12,7 +12,7 @@ export const technologies = [
     name: "Next.js",
     type: "framework",
     description: "Nextjs",
-    url: "https://es.wikipedia.org/wiki/Next.js",
+    url: "https://nextjs.org/docs",
     image: "https://i.imgur.com/jye2QBg.png",
   },
   {
@@ -20,7 +20,7 @@ export const technologies = [
     name: "Tailwind CSS",
     type: "framework",
     description: "Tailwind_CSS",
-    url: "https://es.wikipedia.org/wiki/Tailwind_CSS",
+    url: "https://tailwindcss.com/",
     image: "https://i.imgur.com/LoXN25Y.png",
   },
   {
@@ -28,7 +28,7 @@ export const technologies = [
     name: "JavaScript",
     type: "language",
     description: "JavaScript",
-    url: "https://es.wikipedia.org/wiki/JavaScript",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     image: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
   },
   {
@@ -36,7 +36,7 @@ export const technologies = [
     name: "TypeScript",
     type: "language",
     description: "TypeScript",
-    url: "https://es.wikipedia.org/wiki/TypeScript",
+    url: "https://www.typescriptlang.org/docs/",
     image: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
   },
   {
@@ -44,7 +44,7 @@ export const technologies = [
     name: "CSS",
     type: "language",
     description: "CSS",
-    url: "https://es.wikipedia.org/wiki/CSS",
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     image: "https://cdn.worldvectorlogo.com/logos/css-3.svg",
   },
   {
@@ -52,7 +52,7 @@ export const technologies = [
     name: "HTML",
     type: "language",
     description: "HTML",
-    url: "https://es.wikipedia.org/wiki/HTML",
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     image: "https://cdn.worldvectorlogo.com/logos/html-1.svg",
   },
   {
@@ -60,7 +60,7 @@ export const technologies = [
     name: "Node.js",
     type: "runtime",
     description: "Nodejs",
-    url: "https://es.wikipedia.org/wiki/Node.js",
+    url: "https://nodejs.org/docs/latest/api/",
     image: "https://i.imgur.com/JPOxfsV.png",
   },
   {
@@ -68,7 +68,7 @@ export const technologies = [
     name: "Express.js",
     type: "framework",
     description: "Expressjs",
-    url: "https://es.wikipedia.org/wiki/Express.js",
+    url: "https://expressjs.com/",
     image: "https://i.imgur.com/UTOE0l5.png",
   },
   {
@@ -76,7 +76,7 @@ export const technologies = [
     name: "MongoDB",
     type: "database",
     description: "MongoDB",
-    url: "https://es.wikipedia.org/wiki/MongoDB",
+    url: "https://www.mongodb.com/",
     image: "https://i.imgur.com/ZUhhQU6.png",
   },
   {
@@ -84,7 +84,7 @@ export const technologies = [
     name: "PostgreSQL",
     type: "database",
     description: "PostgreSQL",
-    url: "https://es.wikipedia.org/wiki/PostgreSQL",
+    url: "https://www.postgresql.org/",
     image: "https://i.imgur.com/5oZ5kNv.png",
   },
 ];

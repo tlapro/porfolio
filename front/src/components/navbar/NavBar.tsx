@@ -20,10 +20,30 @@ export default function NavBar() {
           </div>
 
           <div className="hidden md:flex gap-4 mb-2">
-            <Link href={"/home"} className="hover:text-link-hover transition duration-300 p-2">Inicio</Link>
-            <Link href={"/aboutme"} className="hover:text-link-hover transition duration-300 p-2">Sobre Mi</Link>
-            <Link href={"/proyects"} className="hover:text-link-hover transition duration-300 p-2">Proyectos</Link>
-            <Link href={"/contact"} className="hover:text-link-hover transition duration-300 p-2">Contacto</Link>
+            <Link
+              href={"/home"}
+              className="hover:text-link-hover transition duration-300 p-2"
+            >
+              Inicio
+            </Link>
+            <Link
+              href={"/aboutme"}
+              className="hover:text-link-hover transition duration-300 p-2"
+            >
+              Sobre Mi
+            </Link>
+            <Link
+              href={"/proyects"}
+              className="hover:text-link-hover transition duration-300 p-2"
+            >
+              Proyectos
+            </Link>
+            <Link
+              href={"/contact"}
+              className="hover:text-link-hover transition duration-300 p-2"
+            >
+              Contacto
+            </Link>
             <LanguageSwitcher />
             <ThemeToggle />
           </div>
@@ -35,23 +55,57 @@ export default function NavBar() {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300" onClick={closeMenu}></div>
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300"
+          onClick={closeMenu}
+        ></div>
       )}
 
-      <div className={`fixed top-0 right-0 w-[60%] h-full bg-card-bg z-50 transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
+      <div
+        className={`fixed top-0 right-0 w-[60%] h-full bg-card-bg z-50 transform transition-transform duration-300 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
         <div className="flex flex-col items-center justify-center h-[50%] relative">
-          <button onClick={closeMenu} className="absolute top-5 right-5 text-3xl">
+          <button
+            onClick={closeMenu}
+            className="absolute top-5 right-5 text-3xl"
+          >
             <FiX />
           </button>
 
           <nav className="flex flex-col justify-start gap-6 text-2xl font-semibold">
-            <Link href={"/home"} onClick={closeMenu} className="hover:text-link-hover transition duration-300">Inicio</Link>
-            <Link href={"/aboutme"} onClick={closeMenu} className="hover:text-link-hover transition duration-300">Sobre Mi</Link>
-            <Link href={"/proyects"} onClick={closeMenu} className="hover:text-link-hover transition duration-300">Proyectos</Link>
-            <Link href={"/contact"} onClick={closeMenu} className="hover:text-link-hover transition duration-300">Contacto</Link>
-            <div className="text-center">      
-            <LanguageSwitcher />
+            <Link
+              href={"/home"}
+              onClick={closeMenu}
+              className="hover:text-link-hover transition duration-300"
+            >
+              Inicio
+            </Link>
+            <Link
+              href={"/aboutme"}
+              onClick={closeMenu}
+              className="hover:text-link-hover transition duration-300"
+            >
+              Sobre Mi
+            </Link>
+            <Link
+              href={"/proyects"}
+              onClick={closeMenu}
+              className="hover:text-link-hover transition duration-300"
+            >
+              Proyectos
+            </Link>
+            <Link
+              href={"/contact"}
+              onClick={closeMenu}
+              className="hover:text-link-hover transition duration-300"
+            >
+              Contacto
+            </Link>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-2">
                 <ThemeToggle />
+                <LanguageSwitcher />
             </div>
           </nav>
         </div>

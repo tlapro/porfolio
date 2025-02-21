@@ -21,5 +21,13 @@
       "Expressjs": "Express.js is a Node.js framework for creating fast and scalable web applications.",
       "MongoDB": "MongoDB is a document-oriented NoSQL database.",
       "PostgreSQL": "PostgreSQL is a scalable relational database."
-  }
+  },
+"AboutMePage": {
+    "aboutMe": "About Me",
+    "aboutMeDescription1": "I hold a Bachelor's degree in Business Administration and am a Full Stack Developer specializing in frontend development. I am proactive, with a strong ability to learn, adapt, and work in teams. My experience has allowed me to develop digital solutions that combine technology and management.",
+    "aboutMeDescription2": "My focus is on building digital solutions that are intuitive, attractive, and aligned with business goals. I am passionate about creating products that are not only functional but also innovative, generating real impact in business outcomes.",
+    "aboutMeDescription3": "I work with technologies like Node.js, JavaScript, React, Next.js, databases, and backend development. This combination of skills allows me to approach projects comprehensively, covering both frontend and backend, with a focus on efficiency and quality.",
+    "aboutMeDescription4": "My blend of administrative and technical skills allows me to understand user needs and organizational goals, achieving a balance between technical functionality and business strategy, resulting in effective solutions aligned with business objectives.",
+    "aboutMeDescription5": "I am a dedicated professional, always seeking new knowledge and opportunities to improve. Passionate about programming and technology, I enjoy working in teams and contributing to the creation of digital products that make a difference and generate positive impact."
+}
 }
