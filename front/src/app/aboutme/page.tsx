@@ -22,33 +22,33 @@ export default function AboutMe() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-6 group">
-          <TrendingUp size={50} className="hidden md:visible w-2 text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
+          <TrendingUp size={50} className="text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
           <p className="text-sm md:text-md text-justify text-secondary hover:font-semibold">
             {t("aboutMeDescription1")}
           </p>
         </div>
-        <div className="flex items-center gap-6 group">
-          <Target size={50} className="hidden md:visible text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
+        <div className="flex flex-col md:flex-row items-center gap-6 group">
+          <Target size={50} className="text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
           <p className="text-sm md:text-md text-justify text-secondary hover:font-semibold">
             {t("aboutMeDescription2")}
           </p>
         </div>
-        <div className="flex items-center gap-6 group">
-          <Code size={50} className="hidden md:visible text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
+        <div className="flex flex-col md:flex-row items-center gap-6 group">
+          <Code size={50} className="text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
           <p className="text-sm md:text-md text-justify text-secondary hover:font-semibold">
             {t("aboutMeDescription3")}<span className="text-link-hover">{t("aboutMeTecnologies")}</span>{t("aboutMeDescription4")}
           </p>
         </div>
 
-        <div className="flex items-center gap-6 group">
-          <Lightbulb size={50} className="hidden md:visible text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
+        <div className="flex flex-col md:flex-row items-center gap-6 group">
+          <Lightbulb size={50} className="text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
           <p className="text-sm md:text-md text-justify text-secondary hover:font-semibold">
             {t("aboutMeDescription5")}
           </p>
         </div>
 
-        <div className="flex items-center gap-6 group">
-          <Users size={50} className="hidden md:visible text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
+        <div className="flex flex-col md:flex-row items-center gap-6 group">
+          <Users size={50} className="text-primary group-hover:text-link-hover transition-all duration-300 group-hover:scale-125" />
           <p className="text-sm md:text-md text-justify text-secondary hover:font-semibold hover">
             {t("aboutMeDescription6")}
           </p>
