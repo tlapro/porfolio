@@ -4,17 +4,20 @@ import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
 import ThemeToggle from "../themeToggle/ThemeToggle";
 import LanguageSwitcher from "../languageSwitcher/LanguageSwitcher";
+import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function NavBar() {
+  const t = useTranslations("NavBar");
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
-
+  const pathname = usePathname();
   return (
     <>
       <div className="flex bg-card-bg border-card-border border-b-2">
-        <div className="flex h-18 bg-card-bg shadow-md items-center w-full pt-3 pb-1 px-4 justify-between">
+        <div className="flex h-20 bg-card-bg shadow-md items-center w-full pt-3 pb-1 px-4 justify-between">
           <div className="text-xl font-semibold mb-2">
             <Link href={"/home"}>Mi Portafolio</Link>
           </div>
@@ -22,27 +25,55 @@ export default function NavBar() {
           <div className="hidden md:flex gap-4 mb-2">
             <Link
               href={"/home"}
-              className="hover:text-link-hover transition duration-300 p-2"
+              className="relative group hover:text-link-hover transition duration-300 p-2"
             >
-              Inicio
+              {t("home")}
+              <span
+                className={
+                  pathname === "/home"
+                    ? "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-100 transition-transform duration-300"
+                    : "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
+                }
+              ></span>
             </Link>
             <Link
               href={"/aboutme"}
-              className="hover:text-link-hover transition duration-300 p-2"
+              className="relative group hover:text-link-hover transition duration-300 p-2"
             >
-              Sobre Mi
+              {t("aboutMe")}
+              <span
+                className={
+                  pathname === "/aboutme"
+                    ? "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-100 transition-transform duration-300"
+                    : "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
+                }
+              ></span>
             </Link>
             <Link
-              href={"/proyects"}
-              className="hover:text-link-hover transition duration-300 p-2"
+              href={"/projects"}
+              className="relative group hover:text-link-hover transition duration-300 p-2"
             >
-              Proyectos
+              {t("projects")}
+              <span
+                className={
+                  pathname === "/projects"
+                    ? "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-100 transition-transform duration-300"
+                    : "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
+                }
+              ></span>
             </Link>
             <Link
               href={"/contact"}
-              className="hover:text-link-hover transition duration-300 p-2"
+              className="relative group hover:text-link-hover transition duration-300 p-2"
             >
-              Contacto
+              {t("contact")}
+              <span
+                className={
+                  pathname === "/contact"
+                    ? "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-100 transition-transform duration-300"
+                    : "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
+                }
+              ></span>
             </Link>
             <LanguageSwitcher />
             <ThemeToggle />
@@ -74,38 +105,70 @@ export default function NavBar() {
             <FiX />
           </button>
 
-          <nav className="flex flex-col justify-start gap-6 text-2xl font-semibold">
+          <nav className="flex flex-col justify-start gap-6 text-2xl font-semibold mt-20">
             <Link
               href={"/home"}
-              onClick={closeMenu}
-              className="hover:text-link-hover transition duration-300"
+              className="relative group hover:text-link-hover transition duration-300 p-2"
             >
-              Inicio
+              {t("home")}
+              <span
+                className={`absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform transition-all duration-300 
+                ${
+                  pathname === "/home"
+                    ? "scale-y-100"
+                    : "scale-y-0 group-hover:scale-y-100"
+                }`}
+              ></span>
             </Link>
+
             <Link
               href={"/aboutme"}
               onClick={closeMenu}
-              className="hover:text-link-hover transition duration-300"
+              className="relative group hover:text-link-hover transition duration-300 p-2"
             >
-              Sobre Mi
+              {t("aboutMe")}
+              <span
+                className={`absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform transition-all duration-300 
+                ${
+                  pathname === "/aboutme"
+                    ? "scale-y-100"
+                    : "scale-y-0 group-hover:scale-y-100"
+                }`}
+              ></span>
             </Link>
             <Link
-              href={"/proyects"}
+              href={"/projects"}
               onClick={closeMenu}
-              className="hover:text-link-hover transition duration-300"
+              className="relative group hover:text-link-hover transition duration-300 p-2"
             >
-              Proyectos
+              {t("projects")}
+              <span
+                className={`absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform transition-all duration-300 
+                ${
+                  pathname === "/projects"
+                    ? "scale-y-100"
+                    : "scale-y-0 group-hover:scale-y-100"
+                }`}
+              ></span>
             </Link>
             <Link
               href={"/contact"}
               onClick={closeMenu}
-              className="hover:text-link-hover transition duration-300"
+              className="relative group hover:text-link-hover transition duration-300 p-2"
             >
-              Contacto
+              {t("contact")}
+              <span
+                className={`absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform transition-all duration-300 
+                ${
+                  pathname === "/contact"
+                    ? "scale-y-100"
+                    : "scale-y-0 group-hover:scale-y-100"
+                }`}
+              ></span>
             </Link>
             <div className="flex flex-col md:flex-row justify-center items-center gap-2">
-                <ThemeToggle />
-                <LanguageSwitcher />
+              <ThemeToggle />
+              <LanguageSwitcher />
             </div>
           </nav>
         </div>
