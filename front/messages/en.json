@@ -1,0 +1,25 @@
+{
+  "HomePage": {
+      "name": "Tomas Laprovitta",
+      "subtitle": "Full Stack Developer",
+      "description": "Hello! I am a Bachelor in Business Administration and a Full Stack Web Developer. This combination of skills allows me to tackle technology and business challenges from a comprehensive perspective.",
+      "technologies": "Technologies",
+      "ProgrammingLanguages": "Programming Languages",
+      "FrameworksAndLibraries": "Frameworks And Libraries",
+      "Databases": "Databases",
+      "RuntimeEnvironments": "Runtime Environments"
+    },
+  "Technologies": {
+      "React": "React is a JavaScript framework for building user interfaces for web and mobile applications.",
+      "Nextjs": "Next.js is a JavaScript framework for building fast and easy-to-develop web and mobile applications.",
+      "Tailwind_CSS": "Tailwind CSS is a CSS framework that provides tools to create high-quality user interface designs.",
+      "JavaScript": "JavaScript is an interpreted programming language that allows creating interactive and dynamic applications.",
+      "TypeScript": "TypeScript is a programming language based on JavaScript with static typing.",
+      "CSS": "CSS (Cascading Style Sheets) is a styling language for web documents.",
+      "HTML": "HTML (HyperText Markup Language) is a markup language for web pages.",
+      "Nodejs": "Node.js is a JavaScript runtime environment for the server.",
+      "Expressjs": "Express.js is a Node.js framework for creating fast and scalable web applications.",
+      "MongoDB": "MongoDB is a document-oriented NoSQL database.",
+      "PostgreSQL": "PostgreSQL is a scalable relational database."
+  }
+}

@@ -1,11 +1,14 @@
+
 "use client";
 import TechnologySection from "@/components/technologySection/TechnologySection";
 import { MdOutlineKeyboardDoubleArrowRight, MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations('HomePage');
   const [index, setIndex] = useState(1);
   const [direction, setDirection] = useState(1);
 
@@ -46,16 +49,16 @@ export default function Home() {
         </div>
         <div>
           <h1 className="text-4xl font-semibold">
-            Tomás Laprovitta<span className="text-sm text-link-hover"> && Full Stack Developer</span>
+            {t('name')}<span className="text-sm text-link-hover"> && {t('subtitle')}</span>
           </h1>
-          <p className="text-md text-justify mt-4">
-           ¡Hola! Soy Licenciado en Administración y Desarrollador Web FullStack, esta combinación de habilidades me permite abordar los desafíos de la tecnología y los negocios desde una perspectiva integral.
+          <p className="text-md text-justify mt-4 pr-2 pl-2">
+           {t('description')}
           </p>
         </div>
       </div>
 
       <div className="flex w-[80%] flex-col mt-10 gap-4 shadow-lg rounded-lg p-4 bg-card-bg h-fit border-2 border-card-border">
-        <h1 className="text-xl font-semibold text-center">Tecnologías</h1>
+        <h1 className="text-xl font-semibold text-center">{t('technologies')}</h1>
         <div className="grid grid-cols-[1fr_5fr_1fr] w-full justify-between items-center">
           <div className="text-center mt-10">
             <button 
@@ -75,10 +78,10 @@ export default function Home() {
             exit="exit"
             className="w-full"
           >
-            {index === 1 && <TechnologySection title="Lenguajes de Programación" type="language" />}
-            {index === 2 && <TechnologySection title="Frameworks y Librerías" type="framework" />}
-            {index === 3 && <TechnologySection title="Bases de Datos" type="database" />}
-            {index === 4 && <TechnologySection title="Entorno de Ejecución" type="runtime" />}
+            {index === 1 && <TechnologySection title={t('ProgrammingLanguages')} type="language" />}
+            {index === 2 && <TechnologySection title={t('FrameworksAndLibraries')} type="framework" />}
+            {index === 3 && <TechnologySection title={t('Databases')} type="database" />}
+            {index === 4 && <TechnologySection title={t('RuntimeEnvironments')} type="runtime" />}
           </motion.div>
 
           <div className="text-center mt-10">
@@ -94,3 +97,4 @@ export default function Home() {
     </div>
   );
 }
+

@@ -1,5 +1,6 @@
 import Card from "@/components/card/Card";
-import { tecnologies } from "@/helpers/tecnologies";
+import { technologies } from "@/helpers/technologies";
+import { useTranslations } from "next-intl";
 
 interface Props {
   title: string;
@@ -7,7 +8,9 @@ interface Props {
 }
 
 const TechnologySection = ({ title, type }: Props) => {
-  const filteredTechs = tecnologies.filter((tech) => tech.type === type);
+  const t = useTranslations('Technologies');
+
+  const filteredTechs = technologies.filter((tech) => tech.type === type);
 
   return (
     <div className="flex flex-col w-full mt-2 gap-4 rounded-lg p-4 bg-card-bg h-fit">
@@ -18,7 +21,7 @@ const TechnologySection = ({ title, type }: Props) => {
             key={tech.id}
             id={tech.id}
             name={tech.name}
-            description={tech.description}
+            description={t(tech.description)}
             image={tech.image}
             url={tech.url}
           />
