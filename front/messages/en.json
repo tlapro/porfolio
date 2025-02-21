@@ -1,12 +1,12 @@
 {
   "NavBar": {
+    "title": "My Portfolio",
     "home": "Home",
     "aboutMe": "About Me",
     "projects": "Projects",
     "contact": "Contact"
   },
   "HomePage": {
-      "title": "My Portfolio",
       "name": "Tomas Laprovitta",
       "subtitle": "Full Stack Developer",
       "description": "Hello! I am a Bachelor in Business Administration and a Full Stack Web Developer. This combination of skills allows me to tackle technology and business challenges from a comprehensive perspective.",

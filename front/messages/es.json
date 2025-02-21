@@ -1,12 +1,12 @@
 { 
   "NavBar": {
+    "title": "Mi Portafolio",
     "home": "Inicio",
     "aboutMe": "Sobre Mí",
     "projects": "Proyectos",
     "contact": "Contacto"
   },
   "HomePage": {
-      "title": "Mi Portafolio",
       "name": "Tomas Laprovitta",
       "subtitle": "Desarrollador Full Stack",
       "description": "¡Hola! Soy Licenciado en Administración de Empresas y Desarrollador Full Stack. Esta combinación de habilidades me permite abordar desafíos tecnológicos y empresariales desde una perspectiva integral.",

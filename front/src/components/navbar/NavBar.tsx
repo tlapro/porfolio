@@ -19,9 +19,9 @@ export default function NavBar() {
       <div className="flex bg-card-bg border-card-border border-b-2">
         <div className="flex h-20 bg-card-bg shadow-md items-center w-full pt-3 pb-1 px-4 justify-between">
           <div className="text-xl font-semibold mb-2">
-            <Link href={"/home"}>Mi Portafolio</Link>
+            <Link href={"/home"}>{t("title")}</Link>
           </div>
-
+          
           <div className="hidden md:flex gap-4 mb-2">
             <Link
               href={"/home"}
