@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        spectral: ['"Spectral SC"', 'serif'],
+        robotoMono: ['"Roboto Mono"', 'monospace'],
+      },
       colors: {
         /* Fondo y texto general */
         background: "var(--background)",

@@ -38,5 +38,22 @@
     "aboutMeDescription4": "This combination of skills allows me to approach projects comprehensively, covering both frontend and backend, with a focus on efficiency and quality.",
     "aboutMeDescription5": "My blend of administrative and technical skills allows me to understand user needs and organizational goals, achieving a balance between technical functionality and business strategy, resulting in effective solutions aligned with business objectives.",
     "aboutMeDescription6": "I am a dedicated professional, always seeking new knowledge and opportunities to improve. Passionate about programming and technology, I enjoy working in teams and contributing to the creation of digital products that make a difference and generate positive impact."
+},
+  "ProjectsPage": {
+    "title": "My Projects",
+    "description": "Description: ",
+    "technologies": "Technologies: ",
+    "movieTitle": "Movie Platform",
+    "movieDescription": "Development of a web platform to view and upload movies through a form, allowing users to add images and details for each movie.",
+    "restaurantTitle": "Reservation System",
+    "restaurantDescription": "Development of a web application for restaurant table reservations, allowing users to select and manage their reservations efficiently.",
+    "ecommerceTitle": "Ecommerce",
+    "ecommerceDescription": "Development of an e-commerce platform for the sale of electronic products, providing a smooth and efficient shopping experience.",
+    "fitManagerTitle": "FitManager",
+    "fitManagerDescription": "Development of a management app for gyms, focused on managing users, data, online payments, and routines.",
+    "repository": "Repository",
+    "deployment": "Deployment",
+    "video": "Video"
+  }
 }
-}
+

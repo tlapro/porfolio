@@ -38,5 +38,21 @@
       "aboutMeDescription4": "Esta combinación de habilidades me permite abordar proyectos de manera integral, cubriendo tanto el frontend como el backend, con un enfoque en la eficiencia y la calidad.",
       "aboutMeDescription5": "La combinación de mis habilidades administrativas y técnicas me permite comprender las necesidades del usuario y los objetivos organizacionales, logrando un equilibrio entre la funcionalidad técnica y la estrategia empresarial, lo que resulta en soluciones efectivas y alineadas con el negocio.",
       "aboutMeDescription6": "Soy un profesional comprometido, siempre buscando nuevos conocimientos y oportunidades para mejorar. Apasionado por la programación y la tecnología, disfruto trabajar en equipo y contribuir a la creación de productos digitales que marquen la diferencia y generen un impacto positivo."
+    },
+    "ProjectsPage": {
+      "title": "My Projects",
+      "description": "Descripción: ",
+      "technologies": "Tecnologías: ",
+      "movieTitle": "Plataforma de Películas",
+      "movieDescription": "Desarrollo de una plataforma web para visualizar y cargar películas mediante un formulario, permitiendo agregar imagen y detalles de cada película.",
+      "restaurantTitle": "Sistema de Reservas",
+      "restaurantDescription": "Desarrollo de una aplicación web para la reserva de mesas en restaurantes, permitiendo a los usuarios seleccionar y gestionar sus reservas de manera eficiente.",
+      "ecommerceTitle": "Ecommerce",
+      "ecommerceDescription": "Desarrollo de una plataforma e-commerce para la comercialización de productos electrónicos, permitiendo una experiencia de compra fluida y eficiente.",
+      "fitManagerTitle": "FitManager",
+      "fitManagerDescription": "Desarrollo de una aplicación de gestión para gimnasios, enfocada en administrar usuarios, datos, pagos online y rutinas.",
+      "repository": "Repositorio",
+      "deployment": "Despliegue",
+      "video": "Video"
     }
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,10 +8,10 @@
   --foreground: #000000; 
 
   /* Botones */
-  --button-bg: #007bff;
-  --button-text: #ffffff;
-  --button-hover: #0056b3;
-  --button-border: #0056b3;
+  --button-bg: #007bff; /* Azul claro */
+  --button-text: #ffffff; /* Blanco */
+  --button-hover: #0056b3; /* Azul más oscuro */
+  --button-border: #0056b3; /* Azul borde más oscuro */
 
   /* Tarjetas */
   --card-bg: #f8f9fa;
@@ -37,14 +38,14 @@
   --foreground: #ffffff;
 
   /* Botones */ 
-  --button-bg: #040f1a;
-  --button-text: #ffffff;
-  --button-hover: #ffd900;
-  --button-border: #ffd900;
+  --button-bg: #343a40; /* Gris oscuro */
+  --button-text: #ffffff; /* Blanco */
+  --button-hover: #d8a50b; /* Amarillo cálido */
+  --button-border: #ffc107; /* Amarillo cálido para bordes */
 
   /* Tarjetas */
-  --card-bg: #0d0d0d;
-  --card-border: #141414;
+  --card-bg: #141414;
+  --card-border: #252a2e;
   --card-text: #ffffff;
   --tecnologies-card-bg: #ffffff;
 
@@ -53,14 +54,15 @@
   --input-border: #2d2d2d;
   --input-text: #ffffff;
   --input-placeholder: #a1a1a1;
-  --input-focus: #ffd900;
+  --input-focus: #ffc107;
 
   /* Otros */
-  --link-text: #ffd900;
-  --link-hover: #ffc107;
+  --link-text: #ffc107;
+  --link-hover: #ffca28;
   --secondary-bg: #040f1f;
   --secondary-hover: #040e1d;
 }
+
 
 
 body {
