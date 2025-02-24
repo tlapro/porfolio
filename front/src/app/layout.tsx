@@ -51,7 +51,7 @@ export default async function RootLayout({
           <BackgroundText />
             <IsDarkMode>
               <NavBar />
-              <div className="relative z-10 mt-6">{children}</div>
+              <div className="relative z-10 mt-6 min-h-screen">{children}</div>
               <Footer />
             </IsDarkMode>
         </NextIntlClientProvider>

@@ -63,8 +63,6 @@
   --secondary-hover: #040e1d;
 }
 
-
-
 body {
   color: var(--foreground);
   background: var(--background);

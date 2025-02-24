@@ -54,5 +54,13 @@
       "repository": "Repositorio",
       "deployment": "Despliegue",
       "video": "Video"
+    },
+    "ContactPage": {
+      "title": "Mis Redes Sociales",
+      "titleModal": "Contáctame",
+      "inputName": "Nombre",
+      "inputEmail": "Correo",
+      "inputMessage": "Mensaje",
+      "buttonModal": "Enviar"
     }
 }

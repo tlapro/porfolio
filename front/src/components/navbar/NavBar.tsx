@@ -22,7 +22,7 @@ export default function NavBar() {
             <Link href={"/home"}>{t("title")}</Link>
           </div>
           
-          <div className="font-spectral hidden md:flex gap-4 mb-2">
+          <div className="font-spectral text-lg hidden md:flex gap-4 mb-2">
             <Link
               href={"/home"}
               className="relative group hover:text-link-hover transition duration-300 p-2"

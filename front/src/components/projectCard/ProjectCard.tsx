@@ -49,14 +49,14 @@ export default function ProjectCard(project: IProject) {
   </Link>
   {project.deployment && (
     <Link href={project.deployment} target="_blank" className="w-full md:w-auto">
-      <button className="flex flex-1 justify-center items-center gap-2 p-4 text-sm border-button-border bg-green-600 text-button-text hover:bg-green-500 transition duration-300 ease rounded-lg w-full hover:scale-105">
+      <button className="flex flex-1 justify-center items-center gap-2 p-4 text-sm border-button-border bg-button-bg text-button-text hover:bg-button-hover transition duration-300 ease rounded-lg w-full hover:scale-105">
         <ArrowBigUpDash /> {t("deployment")}
       </button>
     </Link>
   )}
   {project.videoLink && (
     <Link href={project.videoLink} target="_blank" className="w-full md:w-auto">
-      <button className="flex flex-1 justify-center items-center gap-2 p-4 text-sm border-button-border bg-red-600 text-button-text hover:bg-red-500 transition duration-300 ease rounded-lg w-full hover:scale-105">
+      <button className="flex flex-1 justify-center items-center gap-2 p-4 text-sm border-button-border bg-button-bg text-button-text hover:bg-button-hover transition duration-300 ease rounded-lg w-full hover:scale-105">
         <Youtube /> {t("video")}
       </button>
     </Link>

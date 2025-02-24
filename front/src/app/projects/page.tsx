@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl"
 export default function Project () {
     const t = useTranslations('ProjectsPage')
     return (
-        <div className="min-h-screen">
+        <div>
         <div className="flex w-[90%] md:w-[80%] justify-center mx-auto">
             <h1 className="text-2xl">{t('title')}</h1>
         </div>
