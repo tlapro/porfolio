@@ -69,7 +69,7 @@ export default function ContactForm() {
                   className="transform rotate-[25deg] hover:scale-105 transition-all duration-300"
                 />
               </div>
-              <div className="absolute top-[200px] right-[100px] opacity-50 z-0">
+              <div className="absolute left-[-120px] top-[200px] md:left-[80%] opacity-50 z-0">
                 <Image
                   src="/2.png"
                   alt="Decorative Image 2"

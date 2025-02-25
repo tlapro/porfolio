@@ -59,7 +59,7 @@ export default function Home() {
           height={300}
           className="w-60 h-60 object-cover rounded-full shadow-xl border-6 bg-gray-700 border-gray-700"
         />
-        <div className="mt-6 md:mt-0 md:ml-10 text-center md:text-left">
+        <div className="mt-6 w-[90%] md:mt-0 md:ml-10 text-center md:text-left">
           <h1 className="text-5xl font-bold">{t("name")}</h1>
           <h2 className="text-xl text-link-hover">&& {t("subtitle")}</h2>
           <hr className="m-4 border-1 border-input-border" />
