@@ -8,6 +8,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { CircleX } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -59,6 +60,33 @@ export default function ContactForm() {
         </h2>
         <hr className="w-full mb-4 border-1 border-input-border" />
         <div className="flex flex-col md:flex-row gap-4">
+         <div className="absolute top-[10px] left-[250px] opacity-50 z-10">
+                <Image
+                  src="/1.png"
+                  alt="Decorative Image 1"
+                  width={150}
+                  height={150}
+                  className="transform rotate-[25deg] hover:scale-105 transition-all duration-300"
+                />
+              </div>
+              <div className="absolute top-[200px] right-[100px] opacity-50 z-0">
+                <Image
+                  src="/2.png"
+                  alt="Decorative Image 2"
+                  width={200}
+                  height={200}
+                  className="transform rotate-[-25deg] hover:scale-110 transition-all duration-300"
+                />
+              </div>
+              <div className="absolute top-[500px] left-[50%] opacity-50 z-10">
+                <Image
+                  src="/3.png"
+                  alt="Decorative Image 1"
+                  width={150}
+                  height={150}
+                  className="transform rotate-[-5deg] hover:scale-105 transition-all duration-300"
+                />
+              </div>
           <div className="flex w-full">
             <Link
               href={"https://www.linkedin.com/in/tlaprovitta/"}

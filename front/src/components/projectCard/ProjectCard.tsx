@@ -19,7 +19,7 @@ export default function ProjectCard(project: IProject) {
         />
       </div>
       <div className="p-6 flex flex-col flex-grow cursor-default min-h-[350px]">
-        <hr className="mb-4 border-1 border-input-border" />
+        
         <h1 className="font-spectral text-xl text-center text-link-hover transition duration-400 ease">
           {t(project.title)}
         </h1>

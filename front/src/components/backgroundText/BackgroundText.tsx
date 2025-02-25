@@ -7,7 +7,7 @@ export default function BackgroundText() {
     const createRandomText = () => {
 
       const colors = ["text-red-500", "text-green-500", "text-blue-500", "text-yellow-400", "text-purple-400", "text-pink-400"];
-      const count = Math.floor(Math.random() * 2) + 2; // Genera 2 o 3 textos por iteración
+      const count = Math.floor(Math.random() * 2) + 2; 
 
       for (let j = 0; j < count; j++) {
         const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
@@ -33,7 +33,7 @@ export default function BackgroundText() {
         }, 130);
 
         setTimeout(() => {
-          span.style.opacity = "0.5";
+          span.style.opacity = "0.3";
         }, 100);
 
         setTimeout(() => {
@@ -45,7 +45,7 @@ export default function BackgroundText() {
       }
     };
 
-    const interval = setInterval(createRandomText, 800);
+    const interval = setInterval(createRandomText, 1000);
     return () => clearInterval(interval);
   }, []);
 

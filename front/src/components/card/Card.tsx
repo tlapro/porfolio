@@ -1,10 +1,11 @@
+"use client"
 import { ITecnologies } from "@/interfaces/ITecnologies";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Card(tecnologies : ITecnologies) {
     return (
-            <div className="flex justify-center items-center relative w-[12rem] h-[12rem] bg-tecnologies-bg group rounded-lg">
+            <div className="flex justify-center items-center relative w-[12rem] h-[12rem] bg-white bg-opacity-80 group rounded-lg">
                 <Image 
                 src={tecnologies.image} 
                 alt="image" 
