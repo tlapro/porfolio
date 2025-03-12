@@ -7,14 +7,16 @@ import Cookies from "js-cookie";
 export default function BgConfig() {
   const t = useTranslations("NavBar");
   const [isActive, setIsActive] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const savedEffect = Cookies.get("effect");
-    if (!savedEffect) {
+    if (savedEffect === undefined) {
       Cookies.set("effect", "enabled", { expires: 365 });
       setIsActive(true);
     }
     setIsActive(savedEffect === "enabled");
+    setIsLoading(false);
   }, []);
 
   function EnableDisableEffect() {
@@ -24,7 +26,16 @@ export default function BgConfig() {
 
     window.dispatchEvent(new Event("storage"));
   }
-
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <div className="flex flex-col items-center space-y-4">
+          <div className="w-12 h-12 border-4 border-black border-dashed rounded-full animate-spin"></div>
+          <p className="text-foreground font-medium">Cargando...</p>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="flex justify-center items-center group gap-1">
       <button
