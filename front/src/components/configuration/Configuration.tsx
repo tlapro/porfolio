@@ -35,15 +35,15 @@ export default function Configuration() {
         </button>
 
         {isOpen && (
-          <div className="absolute text-sm right-0 mt-6 w-48 bg-card-bg shadow-md rounded-lg z-50">
+          <div className="absolute text-sm right-0 mt-6 w-48 bg-card-bg border-[1px] shadow-md rounded-lg border-card-border z-50">
             <ul>
-              <li className="p-3 cursor-pointer">
+              <li className="p-3 cursor-pointer border-b-2 border-card-border">
                 <LanguageSwitcher />
               </li>
-              <li className="p-3 cursor-pointer">
+              <li className="p-3 cursor-pointer border-b-2 border-card-border">
                 <ThemeToggle />
               </li>
-              <li className="p-3 cursor-pointer">
+              <li className="p-3 cursor-pointer border-card-border">
                 <BgConfig />
               </li>
             </ul>

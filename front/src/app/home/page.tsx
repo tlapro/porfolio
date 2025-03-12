@@ -16,7 +16,7 @@ export default function Home() {
           height={300}
           className="w-60 h-60 object-cover rounded-full shadow-xl border-6 bg-gray-700 border-gray-700"
         />
-        <div className="mt-6 w-[90%] md:mt-0 md:ml-10 text-center md:text-left">
+        <div className="mt-6 w-[85%] md:mt-0 md:ml-10 text-center md:text-left">
           <h1 className="text-5xl font-bold">{t("name")}</h1>
           <h2 className="text-xl text-link-hover">&& {t("subtitle")}</h2>
           <hr className="m-4 border-1 border-input-border" />
@@ -27,11 +27,11 @@ export default function Home() {
         </div>
       </div>
       <div className="flex w-[90%] md:w-[80%] flex-col gap-4 rounded-lg p-4 h-fit">
-        <hr className="w-1/2 m-4 border-1 border-input-border mx-auto" />
+        <hr className="w-[90%] md:w-1/2 m-4 border-1 border-input-border mx-auto" />
         <h1 className="text-2xl font-semibold text-center">
           {t("technologies")}
         </h1>
-        <hr className="w-1/2 m-4 border-1 border-input-border mx-auto" />
+        <hr className="w-[90%] md:w-1/2 m-4 border-1 border-input-border mx-auto" />
         
           <div className="text-center mt-10">
            

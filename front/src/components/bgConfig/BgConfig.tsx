@@ -30,14 +30,7 @@ export default function BgConfig() {
   }
 
   if (!isMounted) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <div className="flex flex-col items-center space-y-4">
-          <div className="w-12 h-12 border-4 border-black border-dashed rounded-full animate-spin"></div>
-          <p className="text-foreground font-medium">Cargando...</p>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   return (

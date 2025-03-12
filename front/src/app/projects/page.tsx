@@ -19,7 +19,7 @@ export default function Project() {
           />
         </div>
         <div className="relative text-center text-foreground z-10">
-          <h1 className="text-5xl font-bold">{t('title')}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold">{t('title')}</h1>
         </div>
       </div>
 
