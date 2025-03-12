@@ -7,16 +7,18 @@ import Cookies from "js-cookie";
 export default function BgConfig() {
   const t = useTranslations("NavBar");
   const [isActive, setIsActive] = useState<boolean>(false);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isMounted, setIsMounted] = useState<boolean>(false);
 
   useEffect(() => {
+    setIsMounted(true);
+
     const savedEffect = Cookies.get("effect");
-    if (savedEffect === undefined) {
+    if (!savedEffect) {
       Cookies.set("effect", "enabled", { expires: 365 });
       setIsActive(true);
+    } else {
+      setIsActive(savedEffect === "enabled");
     }
-    setIsActive(savedEffect === "enabled");
-    setIsLoading(false);
   }, []);
 
   function EnableDisableEffect() {
@@ -26,7 +28,8 @@ export default function BgConfig() {
 
     window.dispatchEvent(new Event("storage"));
   }
-  if (isLoading) {
+
+  if (!isMounted) {
     return (
       <div className="flex justify-center items-center h-screen">
         <div className="flex flex-col items-center space-y-4">
@@ -36,6 +39,7 @@ export default function BgConfig() {
       </div>
     );
   }
+
   return (
     <div className="flex justify-center items-center group gap-1">
       <button
