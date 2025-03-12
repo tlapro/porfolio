@@ -6,6 +6,8 @@ import ThemeToggle from "../themeToggle/ThemeToggle";
 import LanguageSwitcher from "../languageSwitcher/LanguageSwitcher";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
+import Configuration from "../configuration/Configuration";
+import BgConfig from "../bgConfig/BgConfig";
 
 export default function NavBar() {
   const t = useTranslations("NavBar");
@@ -21,7 +23,7 @@ export default function NavBar() {
           <div className="text-xl font-semibold mb-2">
             <Link href={"/home"}>{t("title")}</Link>
           </div>
-          
+
           <div className="font-spectral text-lg hidden md:flex gap-4 mb-2">
             <Link
               href={"/home"}
@@ -29,54 +31,61 @@ export default function NavBar() {
             >
               {t("home")}
               <span
-                className={
-                  pathname === "/home"
-                    ? "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-100 transition-transform duration-300"
-                    : "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
-                }
+                className={`absolute left-0 bottom-0 h-[2px] bg-link-hover transform transition-all duration-300
+      ${
+        pathname === "/home"
+          ? "w-full"
+          : "w-0 group-hover:w-full group-hover:origin-left origin-left"
+      }`}
               ></span>
             </Link>
+
             <Link
               href={"/aboutme"}
               className="relative group hover:text-link-hover transition duration-300 p-2"
             >
               {t("aboutMe")}
               <span
-                className={
-                  pathname === "/aboutme"
-                    ? "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-100 transition-transform duration-300"
-                    : "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
-                }
+                className={`absolute left-0 bottom-0 h-[2px] bg-link-hover transform transition-all duration-300
+      ${
+        pathname === "/aboutme"
+          ? "w-full"
+          : "w-0 group-hover:w-full group-hover:origin-left origin-left"
+      }`}
               ></span>
             </Link>
+
             <Link
               href={"/projects"}
               className="relative group hover:text-link-hover transition duration-300 p-2"
             >
               {t("projects")}
               <span
-                className={
-                  pathname === "/projects"
-                    ? "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-100 transition-transform duration-300"
-                    : "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
-                }
+                className={`absolute left-0 bottom-0 h-[2px] bg-link-hover transform transition-all duration-300
+      ${
+        pathname === "/projects"
+          ? "w-full"
+          : "w-0 group-hover:w-full group-hover:origin-left origin-left"
+      }`}
               ></span>
             </Link>
+
             <Link
               href={"/contact"}
               className="relative group hover:text-link-hover transition duration-300 p-2"
             >
               {t("contact")}
               <span
-                className={
-                  pathname === "/contact"
-                    ? "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-100 transition-transform duration-300"
-                    : "absolute left-0 bottom-0 w-full h-[2px] bg-link-hover transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"
-                }
+                className={`absolute left-0 bottom-0 h-[2px] bg-link-hover transform transition-all duration-300
+      ${
+        pathname === "/contact"
+          ? "w-full"
+          : "w-0 group-hover:w-full group-hover:origin-left origin-left"
+      }`}
               ></span>
             </Link>
-            <LanguageSwitcher />
-            <ThemeToggle />
+
+            <Configuration />
           </div>
 
           <button onClick={toggleMenu} className="md:hidden text-2xl">
@@ -105,7 +114,7 @@ export default function NavBar() {
             <FiX />
           </button>
 
-          <nav className="flex flex-col justify-start gap-6 text-2xl font-semibold mt-20">
+          <nav className="font-spectral flex flex-col justify-start gap-6 text-2xl font-semibold mt-36">
             <Link
               href={"/home"}
               className="relative group hover:text-link-hover transition duration-300 p-2"
@@ -169,6 +178,7 @@ export default function NavBar() {
             <div className="flex flex-col md:flex-row justify-center items-center gap-2">
               <ThemeToggle />
               <LanguageSwitcher />
+              <BgConfig />
             </div>
           </nav>
         </div>

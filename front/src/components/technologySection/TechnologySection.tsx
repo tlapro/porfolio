@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Card from "@/components/card/Card";
 import { technologies } from "@/helpers/technologies";
 import { useTranslations } from "next-intl";
@@ -14,7 +15,7 @@ const TechnologySection = ({ title, type }: Props) => {
 
   return (
     <div className="flex flex-col w-full mt-2 gap-4 rounded-lg p-4 h-fit">
-      <h1 className="text-xl font-semibold text-center">{title}</h1>
+      {/* <h1 className="text-xl font-semibold text-center">{title}</h1> */}
 
       <div className="flex flex-col md:flex-row gap-2 mx-auto justify-between items-center">
         {filteredTechs.map((tech) => (

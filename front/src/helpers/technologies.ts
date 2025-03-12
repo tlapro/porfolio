@@ -58,7 +58,7 @@ export const technologies = [
   {
     id: 8,
     name: "Node.js",
-    type: "runtime",
+    type: "database",
     description: "Nodejs",
     url: "https://nodejs.org/docs/latest/api/",
     image: "https://i.imgur.com/JPOxfsV.png",

@@ -4,10 +4,9 @@ import NavBar from "@/components/navbar/NavBar";
 import Footer from "@/components/footer/Footer";
 import IsDarkMode from "@/components/isDark/IsDarkMode";
 import BackgroundText from "@/components/backgroundText/BackgroundText";
-import {NextIntlClientProvider} from 'next-intl';
-import { getMessages} from 'next-intl/server';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import { cookies } from "next/headers";
-
 
 const roboto = Roboto({
   weight: "400",
@@ -33,13 +32,12 @@ export const metadata = {
 };
 
 export default async function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
   const cookieStore = await cookies();
   const storedLocale = cookieStore.get("locale")?.value ?? "es";
-
   const messages = await getMessages({ locale: storedLocale });
 
   return (
@@ -49,13 +47,12 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages} locale={storedLocale}>
           <BackgroundText />
-            <IsDarkMode>
-              <NavBar />
-              <div className="relative z-10 mt-6 min-h-screen">{children}</div>
-              <Footer />
-            </IsDarkMode>
+          <IsDarkMode>
+            <NavBar />
+            <div className="relative z-10 mt-6 min-h-screen">{children}</div>
+            <Footer />
+          </IsDarkMode>
         </NextIntlClientProvider>
-
       </body>
     </html>
   );

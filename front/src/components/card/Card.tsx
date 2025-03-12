@@ -9,8 +9,8 @@ export default function Card(tecnologies : ITecnologies) {
                 <Image 
                 src={tecnologies.image} 
                 alt="image" 
-                height={100} 
-                width={100} 
+                height={90} 
+                width={90} 
                 />
                 <Link href={tecnologies.url}
                 target="_blank"

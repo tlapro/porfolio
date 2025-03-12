@@ -4,7 +4,12 @@
     "home": "Inicio",
     "aboutMe": "Sobre Mí",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "darkTheme": "Modo Oscuro",
+    "lightTheme": "Modo Claro",
+    "spanish": "Español",
+    "english": "Inglés",
+    "bg-effect": "Efecto de Fondo"
   },
   "HomePage": {
       "name": "Tomas Laprovitta",
