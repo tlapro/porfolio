@@ -10,6 +10,10 @@ export default function BgConfig() {
 
   useEffect(() => {
     const savedEffect = Cookies.get("effect");
+    if (!savedEffect) {
+      Cookies.set("effect", "enabled", { expires: 365 });
+      setIsActive(true);
+    }
     setIsActive(savedEffect === "enabled");
   }, []);
 
