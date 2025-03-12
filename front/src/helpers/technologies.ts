@@ -1,3 +1,10 @@
+import { 
+  FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJs 
+} from "react-icons/fa";
+import { 
+  SiNextdotjs, SiTailwindcss, SiMongodb, SiPostgresql, SiTypescript, SiExpress 
+} from "react-icons/si";
+
 export const technologies = [
   {
     id: 1,
@@ -6,6 +13,7 @@ export const technologies = [
     description: "React",
     url: "https://react.dev/",
     image: "https://i.imgur.com/pJqSsPz.png",
+    icon: FaReact,
   },
   {
     id: 2,
@@ -14,6 +22,7 @@ export const technologies = [
     description: "Nextjs",
     url: "https://nextjs.org/docs",
     image: "https://i.imgur.com/jye2QBg.png",
+    icon: SiNextdotjs,
   },
   {
     id: 3,
@@ -22,6 +31,7 @@ export const technologies = [
     description: "Tailwind_CSS",
     url: "https://tailwindcss.com/",
     image: "https://i.imgur.com/LoXN25Y.png",
+    icon: SiTailwindcss,
   },
   {
     id: 4,
@@ -30,6 +40,7 @@ export const technologies = [
     description: "JavaScript",
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     image: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+    icon: FaJs,
   },
   {
     id: 5,
@@ -38,6 +49,7 @@ export const technologies = [
     description: "TypeScript",
     url: "https://www.typescriptlang.org/docs/",
     image: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+    icon: SiTypescript,
   },
   {
     id: 6,
@@ -46,6 +58,7 @@ export const technologies = [
     description: "CSS",
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     image: "https://cdn.worldvectorlogo.com/logos/css-3.svg",
+    icon: FaCss3Alt,
   },
   {
     id: 7,
@@ -54,6 +67,7 @@ export const technologies = [
     description: "HTML",
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     image: "https://cdn.worldvectorlogo.com/logos/html-1.svg",
+    icon: FaHtml5,
   },
   {
     id: 8,
@@ -62,6 +76,7 @@ export const technologies = [
     description: "Nodejs",
     url: "https://nodejs.org/docs/latest/api/",
     image: "https://i.imgur.com/JPOxfsV.png",
+    icon: FaNodeJs,
   },
   {
     id: 9,
@@ -70,6 +85,7 @@ export const technologies = [
     description: "Expressjs",
     url: "https://expressjs.com/",
     image: "https://i.imgur.com/UTOE0l5.png",
+    icon: SiExpress,
   },
   {
     id: 10,
@@ -78,6 +94,7 @@ export const technologies = [
     description: "MongoDB",
     url: "https://www.mongodb.com/",
     image: "https://i.imgur.com/ZUhhQU6.png",
+    icon: SiMongodb,
   },
   {
     id: 11,
@@ -86,5 +103,6 @@ export const technologies = [
     description: "PostgreSQL",
     url: "https://www.postgresql.org/",
     image: "https://i.imgur.com/5oZ5kNv.png",
+    icon: SiPostgresql,
   },
 ];

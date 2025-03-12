@@ -175,7 +175,7 @@ export default function NavBar() {
                 }`}
               ></span>
             </Link>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-2">
+            <div className="flex flex-col text-sm md:flex-row justify-center items-center gap-4">
               <ThemeToggle />
               <LanguageSwitcher />
               <BgConfig />

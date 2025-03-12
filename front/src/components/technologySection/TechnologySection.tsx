@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import Card from "@/components/card/Card";
 import { technologies } from "@/helpers/technologies";
 import { useTranslations } from "next-intl";
@@ -8,7 +8,7 @@ interface Props {
   type: string;
 }
 
-const TechnologySection = ({ title, type }: Props) => {
+const TechnologySection = ({ type }: Props) => {
   const t = useTranslations('Technologies');
 
   const filteredTechs = technologies.filter((tech) => tech.type === type);
@@ -17,20 +17,19 @@ const TechnologySection = ({ title, type }: Props) => {
     <div className="flex flex-col w-full mt-2 gap-4 rounded-lg p-4 h-fit">
       {/* <h1 className="text-xl font-semibold text-center">{title}</h1> */}
 
-      <div className="flex flex-col md:flex-row gap-2 mx-auto justify-between items-center">
+      <div className="flex flex-wrap justify-center gap-4">
         {filteredTechs.map((tech) => (
           <Card
-          key={tech.id}
-          id={tech.id}
-          name={tech.name}
-          description={t(tech.description)}
-          image={tech.image}
-          url={tech.url}
+            key={tech.id}
+            id={tech.id}
+            name={tech.name}
+            description={t(tech.description)}
+            icon={tech.icon}
+            url={tech.url}
           />
         ))}
       </div>
     </div>
-
   );
 };
 
