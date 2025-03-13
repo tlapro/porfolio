@@ -33,7 +33,7 @@ export default function Home() {
         </h1>
         <hr className="w-[90%] md:w-1/2 m-4 border-1 border-input-border mx-auto" />
         
-          <div className="text-center mt-10">
+          <div className="text-center">
            
             <div className="w-[90%] flex-col justify-center mx-auto">
               <TechnologySection
