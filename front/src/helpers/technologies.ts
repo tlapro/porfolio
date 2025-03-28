@@ -1,8 +1,8 @@
-import { 
-  FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJs 
+import {
+  FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJs
 } from "react-icons/fa";
-import { 
-  SiNextdotjs, SiTailwindcss, SiMongodb, SiPostgresql, SiTypescript, SiExpress 
+import {
+  SiNextdotjs, SiTailwindcss, SiMongodb, SiPostgresql, SiTypescript, SiExpress, SiNestjs, SiSwagger, SiTypeorm
 } from "react-icons/si";
 
 export const technologies = [
@@ -72,7 +72,7 @@ export const technologies = [
   {
     id: 8,
     name: "Node.js",
-    type: "database",
+    type: "runtime",
     description: "Nodejs",
     url: "https://nodejs.org/docs/latest/api/",
     image: "https://i.imgur.com/JPOxfsV.png",
@@ -104,5 +104,32 @@ export const technologies = [
     url: "https://www.postgresql.org/",
     image: "https://i.imgur.com/5oZ5kNv.png",
     icon: SiPostgresql,
+  },
+  {
+    id: 12,
+    name: "Nest.js",
+    type: "framework",
+    description: "Nestjs",
+    url: "https://nestjs.com/",
+    image: "https://i.imgur.com/2PnHEjT.png",
+    icon: SiNestjs,
+  },
+  {
+    id: 13,
+    name: "Swagger",
+    type: "runtime",
+    description: "Swagger",
+    url: "https://swagger.io/",
+    image: "https://i.imgur.com/placeholder.png",
+    icon: SiSwagger,
+  },
+  {
+    id: 14,
+    name: "TypeORM",
+    type: "database",
+    description: "TypeORM",
+    url: "https://typeorm.io/",
+    image: "https://i.imgur.com/placeholder.png",
+    icon: SiTypeorm,
   },
 ];

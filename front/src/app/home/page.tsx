@@ -49,6 +49,10 @@ export default function Home() {
                 title={t("RuntimeEnvironments")}
                 type="runtime"
               />
+              <TechnologySection
+                title={t("technologies")}
+                type="documentation"
+              />
             </div>
         </div>
       </div>

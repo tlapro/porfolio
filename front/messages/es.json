@@ -32,7 +32,10 @@
       "Nodejs": "Node.js es un entorno de ejecución de JavaScript para el servidor.",
       "Expressjs": "Express.js es un framework de Node.js para crear aplicaciones web rápidas y escalables.",
       "MongoDB": "MongoDB es una base de datos NoSQL orientada a documentos.",
-      "PostgreSQL": "PostgreSQL es una base de datos relacional escalable."
+      "PostgreSQL": "PostgreSQL es una base de datos relacional escalable.",
+      "Nestjs": "NestJS es un framework progresivo de Node.js para la construcción de aplicaciones del lado del servidor escalables y mantenibles",
+      "Swagger": "Swagger es una herramienta para documentar, diseñar y probar APIs RESTful de manera interactiva",
+      "TypeORM": "TypeORM es un ORM de TypeScript para bases de datos SQL, que permite manejar la base de datos utilizando objetos y clases"
   },
     "AboutMePage": {
       "aboutMe": "Sobre Mí",
@@ -56,6 +59,8 @@
       "ecommerceDescription": "Desarrollo de una plataforma e-commerce para la comercialización de productos electrónicos, permitiendo una experiencia de compra fluida y eficiente.",
       "fitManagerTitle": "FitManager",
       "fitManagerDescription": "Desarrollo de una aplicación de gestión para gimnasios, enfocada en administrar usuarios, datos, pagos online y rutinas.",
+      "crudUsersTitle": "CRUD Users",
+      "crudUsersDescription": "Un sistema CRUD para la gestión de usuarios, desarrollado con NestJS. Permite crear, leer, actualizar y eliminar usuarios de manera eficiente.",
       "repository": "Repositorio",
       "deployment": "Despliegue",
       "video": "Video"

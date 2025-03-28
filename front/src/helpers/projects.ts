@@ -47,10 +47,21 @@ export const projects : IProject[]= [
         id: 4,
         title: "fitManagerTitle",
         description: "fitManagerDescription",
-        technologies: ["React", "Next.js", "NestJS", "PostgreSQL", "TypeORM", "PostgreSQL"],
+        technologies: ["React", "Next.js", "NestJS", "PostgreSQL", "TypeORM"],
         repository: "https://github.com/tlapro/fitmanager",
         deployment: "https://fitmanager-henry.vercel.app/home",
         videoLink: "https://youtu.be/-I9kJ9Q_YWk",
         image: "/fitManager.png",
-    },    
+    },
+    {
+        // CRUD Users
+        id: 5,
+        title: "crudUsersTitle",
+        description: "crudUsersDescription",
+        technologies: ["Nest.js", "PostgreSQL", "TypeORM", "TypeScript"],
+        repository: "https://github.com/tlapro/crud-users",
+        deployment: "",
+        videoLink: "",
+        image: "/underConstruction.png",
+    },
 ]
