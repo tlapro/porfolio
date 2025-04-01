@@ -6,7 +6,7 @@ export default function Footer () {
     return (
         <div className="h-10 mt-10 flex justify-center items-start mb-10">
             <div className="flex gap-4">
-            <Link href={"https://www.linkedin.com/in/tlaprovitta/"}
+            <Link href={"https://www.linkedin.com/in/tomaslaprovitta/"}
             target="_blank"
             rel="noopener noreferrer"
             >

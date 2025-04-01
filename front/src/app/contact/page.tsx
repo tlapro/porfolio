@@ -89,7 +89,7 @@ export default function ContactForm() {
               </div>
           <div className="flex w-full">
             <Link
-              href={"https://www.linkedin.com/in/tlaprovitta/"}
+              href={"https://www.linkedin.com/in/tomaslaprovitta/"}
               target="_blank"
               rel="noopener noreferrer"
             >

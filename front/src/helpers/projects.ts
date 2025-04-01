@@ -58,10 +58,10 @@ export const projects : IProject[]= [
         id: 5,
         title: "crudUsersTitle",
         description: "crudUsersDescription",
-        technologies: ["Nest.js", "PostgreSQL", "TypeORM", "TypeScript"],
+        technologies: ["Nest.js", "PostgreSQL", "TypeORM", "TypeScript", "Swagger"],
         repository: "https://github.com/tlapro/crud-users",
         deployment: "",
         videoLink: "",
-        image: "/underConstruction.png",
+        image: "/apiRest.jpg",
     },
 ]

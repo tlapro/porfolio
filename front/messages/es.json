@@ -59,7 +59,7 @@
       "ecommerceDescription": "Desarrollo de una plataforma e-commerce para la comercialización de productos electrónicos, permitiendo una experiencia de compra fluida y eficiente.",
       "fitManagerTitle": "FitManager",
       "fitManagerDescription": "Desarrollo de una aplicación de gestión para gimnasios, enfocada en administrar usuarios, datos, pagos online y rutinas.",
-      "crudUsersTitle": "CRUD Users",
+      "crudUsersTitle": "API REST",
       "crudUsersDescription": "Un sistema CRUD para la gestión de usuarios, desarrollado con NestJS. Permite crear, leer, actualizar y eliminar usuarios de manera eficiente.",
       "repository": "Repositorio",
       "deployment": "Despliegue",

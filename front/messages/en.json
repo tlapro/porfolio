@@ -35,7 +35,7 @@
       "PostgreSQL": "PostgreSQL is a scalable relational database.",
       "Nestjs": "NestJS is a progressive Node.js framework for building scalable and maintainable server-side applications",
       "Swagger": "Swagger is a tool for documenting, designing, and testing RESTful APIs interactively",
-      "TypeORM": "ypeORM is a TypeScript ORM for SQL databases that allows handling the database using objects and classes"
+      "TypeORM": "TypeORM is a TypeScript ORM for SQL databases that allows handling the database using objects and classes"
   },
 "AboutMePage": {
     "aboutMe": "About Me",
@@ -59,7 +59,7 @@
     "ecommerceDescription": "Development of an e-commerce platform for the sale of electronic products, providing a smooth and efficient shopping experience.",
     "fitManagerTitle": "FitManager",
     "fitManagerDescription": "Development of a management app for gyms, focused on managing users, data, online payments, and routines.",
-    "crudUsersTitle": "CRUD Users",
+    "crudUsersTitle": "API REST",
     "crudUsersDescription": "A CRUD system for user management, developed with NestJS. It allows creating, reading, updating, and deleting users efficiently",
     "repository": "Repository",
     "deployment": "Deployment",
