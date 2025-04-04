@@ -42,7 +42,7 @@
       "aboutMeDescription1": "Soy Licenciado en Administración de Empresas y Desarrollador Full Stack con especialización en frontend. Me considero una persona proactiva, con gran capacidad de aprendizaje, adaptación y trabajo en equipo. Mi experiencia me ha permitido desarrollar soluciones digitales que combinan tecnología y gestión.",
       "aboutMeDescription2": "Mi enfoque se centra en construir soluciones digitales intuitivas, atractivas y alineadas con los objetivos organizacionales. Me apasiona crear productos que no solo sean funcionales, sino también innovadores, para generar un impacto real en el negocio.",
       "aboutMeDescription3": "Trabajo con tecnologías como ",
-      "aboutMeTecnologies": "Node.js, JavaScript, React, Next.js, bases de datos y desarrollo backend. ",
+      "aboutMeTecnologies": "Node.js, JavaScript, TypeScript, React, Next.js, Nest.js, TypeORM, Swagger, PostgreSQL, MongoDB, HTML, CSS, entre otras. ",
       "aboutMeDescription4": "Esta combinación de habilidades me permite abordar proyectos de manera integral, cubriendo tanto el frontend como el backend, con un enfoque en la eficiencia y la calidad.",
       "aboutMeDescription5": "La combinación de mis habilidades administrativas y técnicas me permite comprender las necesidades del usuario y los objetivos organizacionales, logrando un equilibrio entre la funcionalidad técnica y la estrategia empresarial, lo que resulta en soluciones efectivas y alineadas con el negocio.",
       "aboutMeDescription6": "Soy un profesional comprometido, siempre buscando nuevos conocimientos y oportunidades para mejorar. Apasionado por la programación y la tecnología, disfruto trabajar en equipo y contribuir a la creación de productos digitales que marquen la diferencia y generen un impacto positivo."
@@ -61,6 +61,8 @@
       "fitManagerDescription": "Desarrollo de una aplicación de gestión para gimnasios, enfocada en administrar usuarios, datos, pagos online y rutinas.",
       "crudUsersTitle": "API REST",
       "crudUsersDescription": "Un sistema CRUD para la gestión de usuarios, desarrollado con NestJS. Permite crear, leer, actualizar y eliminar usuarios de manera eficiente.",
+      "festivalTitle": "ARGENTINA ROCK",
+      "festivalDescription": "Plataforma web para comprar entradas del festival de rock nacional más esperado.",
       "repository": "Repositorio",
       "deployment": "Despliegue",
       "video": "Video"

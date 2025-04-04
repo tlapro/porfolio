@@ -64,4 +64,15 @@ export const projects : IProject[]= [
         videoLink: "",
         image: "/apiRest.jpg",
     },
+    {
+        // Festival
+        id: 6,
+        title: "festivalTitle",
+        description: "festivalDescription",
+        technologies: ["JavaScript", "React", "Next.js", "Nest.js", "PostgreSQL", "TypeORM", "TypeScript", "Swagger"],
+        repository: "https://github.com/tlapro/concert",
+        deployment: "",
+        videoLink: "",
+        image: "/underConstruction.png",
+    },
 ]
